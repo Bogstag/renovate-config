@@ -1,0 +1,34 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "autoApprove": true,
+  "automerge": true,
+  "globalExtends": [
+    "config:best-practices",
+    "schedule:weekly",
+    ":assignee(bogstag)",
+    ":reviewer(bogstag)",
+  ],
+  "major": {
+    "autoApprove": false,
+    "automerge": false
+  },
+  "minimumReleaseAge": "3 days",
+  "onboarding": true,
+  "packageRules": [
+    {
+      "extends": ["packages:vite"],
+      "groupName": "Vite packages"
+    },
+    {
+      "addLabels": ["deps:actions"],
+      "description": "Use the deps:actions label for github-action manager updates (this means Renovate's github-action manager).",
+      "matchManagers": ["github-actions"]
+    },
+    {
+      "addLabels": ["deps:npm"],
+      "description": "Use the deps:npm label for npm manager packages (this means Renovate's npm manager).",
+      "matchManagers": ["npm"]
+    }
+  ],
+  "schedule": ["* 15 * * 1"]
+}
