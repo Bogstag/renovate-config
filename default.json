@@ -5,8 +5,8 @@
   "globalExtends": [
     "config:best-practices",
     "schedule:weekly",
-    ":assignee(bogstag)",
-    ":reviewer(bogstag)",
+    ":assignee(Bogstag)",
+    ":reviewer(Bogstag)",
     "helpers:pinGitHubActionDigests"
   ],
   "major": {
