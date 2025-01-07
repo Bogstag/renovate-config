@@ -1,21 +1,21 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "autoApprove": true,
-  "automerge": true,
-  "globalExtends": [
-		":approveMajorUpdates",
-    ":assignAndReview(Bogstag)",
-    ":automergeRequireAllStatusChecks",
-    ":automergeStableNonMajor",
-    "config:best-practices",
-    "group:vite",
-    "npm:unpublishSafe",
-    "packages:jsTest",
-    "packages:linters",
-    "packages:postcss", 
-    "packages:stylelint",
-    "schedule:weekly",
-  ],
-  "onboarding": true,
-  "schedule": ["* 15 * * 1"]
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "globalExtends": [
+        ":approveMajorUpdates",
+        ":assignAndReview(Bogstag)",
+        ":automergeRequireAllStatusChecks",
+        ":automergeStableNonMajor",
+        "config:best-practices",
+        "group:vite",
+        "npm:unpublishSafe",
+        "packages:jsTest",
+        "packages:linters",
+        "packages:postcss",
+        "packages:stylelint",
+        "schedule:weekly"
+    ],
+    "onboarding": true,
+    "schedule": [
+        "* 15 * * 1"
+    ]
 }
