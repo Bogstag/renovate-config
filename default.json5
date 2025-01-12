@@ -12,7 +12,7 @@
         "packages:linters",
         "packages:postcss",
         "packages:stylelint",
-        "schedule:weekly"
+        ":automergeAll"
     ],
     "onboarding": true,
     "schedule": [
