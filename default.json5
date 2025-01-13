@@ -11,8 +11,7 @@
         "packages:jsTest",
         "packages:linters",
         "packages:postcss",
-        "packages:stylelint",
-        ":automergeAll"
+        "packages:stylelint"
     ],
     "onboarding": true,
     "schedule": [
