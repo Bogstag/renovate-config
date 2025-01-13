@@ -1,11 +1,11 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "globalExtends": [
+        "config:best-practices",
         ":approveMajorUpdates",
         ":assignAndReview(Bogstag)",
         ":automergeRequireAllStatusChecks",
-        ":automergeStableNonMajor",
-        "config:best-practices",
+        ":automergeAll",
         "group:vite",
         "npm:unpublishSafe",
         "packages:jsTest",
@@ -13,6 +13,7 @@
         "packages:postcss",
         "packages:stylelint"
     ],
+    "automergeType": "branch"
     "onboarding": true,
     "schedule": [
         "* 15 * * 1"
