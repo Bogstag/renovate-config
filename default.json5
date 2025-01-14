@@ -1,26 +1,31 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "globalExtends": [
-        "config:best-practices",
-        ":approveMajorUpdates",
-        ":assignAndReview(Bogstag)",
-        ":automergeRequireAllStatusChecks",
-        ":automergeAll",
-        "group:vite",
-        "npm:unpublishSafe",
-        "packages:jsTest",
-        "packages:linters",
-        "packages:postcss",
-        "packages:stylelint",
-        "packages:typescript",
-        "packages:vue",
-        "packages:vite",
-        "packages:vue3",
-        "schedule:weekly"
-    ],
-    "automergeType": "branch",
-    "onboarding": true,
-    "prHourlyLimit": 5,
-    "branchConcurrentLimit": 10,
-    "stabilityDays": 3
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "globalExtends": [
+    "config:best-practices",
+    ":approveMajorUpdates",
+    ":assignAndReview(Bogstag)",
+    ":automergeRequireAllStatusChecks",
+    ":automergeAll",
+    "group:vite",
+    "npm:unpublishSafe",
+    "packages:jsTest",
+    "packages:linters",
+    "packages:postcss",
+    "packages:stylelint",
+    "packages:typescript",
+    "packages:vue",
+    "packages:vite",
+    "packages:vue3",
+  ],
+  "onboarding": "true",
+  "prHourlyLimit": "5",
+  "branchConcurrentLimit": "10",
+  "stabilityDays": "3",
+  "packageRules": [
+    {
+      "matchPackageNames": ["*"],
+      "automerge": "true",
+      "automergeType": "branch"
+    }
+  ]
 }
