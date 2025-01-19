@@ -7,7 +7,7 @@
     ":automergeRequireAllStatusChecks",
     ":automergeAll",
     ":rebaseStalePrs",
-    "group:vite",
+    "group:allNonMajor",
     "npm:unpublishSafe",
     "packages:jsTest",
     "packages:linters",
