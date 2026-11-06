@@ -1,0 +1,12 @@
+{
+  // "$schema": "https://docs.renovatebot.com/renovate-inherited-schema.json",
+  "globalExtends": [
+    "config:recommended",
+    "config:best-practices",
+    "schedule:monthly",
+    "schedule:automergeEarlyMondays",
+    ":automergeBranch",
+    ":automergeRequireAllStatusChecks",
+    ":assignAndReview(Bogstag)",
+  ],
+}
