@@ -81,3 +81,24 @@
   "ignoreTests": false
 }
 ```
+
+#### :assignAndReview(<arg0>)
+
+```json
+{
+  "extends": [
+    ":assignee(arg0)", 
+    ":reviewer(arg0)" 
+  ]
+}
+```
+
+#### :label(<arg0>)
+
+```json
+{
+  "labels": [
+    "arg0"
+  ]
+}
+```
