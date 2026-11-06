@@ -1,6 +1,6 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "globalExtends": [
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  globalExtends: [
     "config:best-practices",
     ":approveMajorUpdates",
     ":assignAndReview(Bogstag)",
@@ -16,17 +16,17 @@
     "packages:typescript",
     "packages:vue",
     "packages:vite",
-    "packages:vue3",
+    "packages:vue3"
   ],
-  "onboarding": "true",
-  "prHourlyLimit": "5",
-  "branchConcurrentLimit": "10",
-  "stabilityDays": "3",
-  "packageRules": [
+  onboarding: "true",
+  prHourlyLimit: "5",
+  branchConcurrentLimit: "10",
+  stabilityDays: "3",
+  packageRules: [
     {
-      "matchPackageNames": ["*"],
-      "automerge": "true",
-      "automergeType": "branch"
+      matchPackageNames: ["*"],
+      automerge: "true",
+      automergeType: "branch"
     }
   ]
 }
