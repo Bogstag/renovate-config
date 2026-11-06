@@ -82,7 +82,7 @@
 }
 ```
 
-#### :assignAndReview(<arg0>)
+#### :assignAndReview(arg0)
 
 ```json
 {
@@ -93,7 +93,7 @@
 }
 ```
 
-#### :label(<arg0>)
+#### :label(arg0)
 
 ```json
 {
